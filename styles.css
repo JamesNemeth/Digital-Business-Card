@@ -1,0 +1,99 @@
+body {
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.profile{
+    width: 250px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 1px;
+    transition: transform 0.5s;
+}
+.profile:hover {
+    transform: scale(1.15);
+}
+.card{
+    background-color: #D1FAFF;
+    border-bottom: 5px solid #57A773;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 650px;
+    height: 300px;
+    margin: 0 auto;
+    color: #2b2839;
+    position: relative;
+    z-index: 1;
+}
+.name{
+    text-align: center;
+}
+.text{
+    color: #2b2839;
+    position: absolute;
+    margin: 150
+}
+.language{
+    text-align: center;
+}
+.link{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    display: inline-block;
+    color: #2b2839;
+    position: absolute;
+    text-align: center;
+    right: 20;
+    bottom: 5;
+}
+@keyframes growingCircle {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.10);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.growingCircle{
+    animation: growingCircle 3s ease-in-out infinite normal;
+    position: absolute;
+    display: inline-block;
+    transform: translateX();
+    z-index: -1;
+    opacity: 0.4;
+}
+.circle{
+    height: 100px;
+    width: 100px;
+    background-color: #9BD1E5;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: -300;
+    top: -10;
+}
+
+.circle-2{
+    height: 180px;
+    width: 180px;
+    background-color: #9BD1E5;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 125;
+    top: 100;
+    
+}
+.circle-3{
+    height: 100px;
+    width: 100px;
+    background-color: #9BD1E5;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: -270;
+    top: 190;
+}
